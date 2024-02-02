@@ -1,11 +1,13 @@
 <html>
     <head>
-        <title> Home Page </title> 
+        <title> Home page </title> 
     </head>
     <body>
         <h1>Home Page!</h1>
-        {% for _ in range(10) %}
-        <p>{{content}}</p>
+        {% for x in range(10) %}
+            {% if x % 2 == 1 %}
+                <p>x</p>
+            {% endif %}
         {% endfor %}
         <p>{{content}}</p>
     </body>
